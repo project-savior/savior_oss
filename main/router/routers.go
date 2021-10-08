@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"savior_oss/main/common"
+	"savior_oss/main/controller"
 )
 
 func SetUpRoute() *gin.Engine {
@@ -17,6 +18,6 @@ func SetUpRoute() *gin.Engine {
 
 func registerRoute(r *gin.Engine) {
 	r.Use()
-	//r.GET("/test", controller.Test)
+	r.GET("/test", controller.Test)
 
 }
